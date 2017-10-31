@@ -7,6 +7,7 @@ hbs.registerPartials(__dirname + "/views/partials");
 hbs.registerHelper('getcurrentYear',()=>{
 	return new Date().getFullYear();
 });
+let a;
 app.set("viewengine","hbs");
 app.use((req,res,next)=>{
  let now = new Date().toString();
